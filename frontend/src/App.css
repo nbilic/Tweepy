@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+#root,
+body {
+  margin: 0;
+  background-color: rgb(43, 88, 100);
+}
+
+.menu-icon {
+  margin-left: -10px;
+  padding-right: 5px;
+}
+.navbar-box {
+  position: sticky;
+  top: 0; /* required */
+  z-index: 100;
+}
+.branding {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  max-height: 24px;
+  margin-right: 10px;
+}
+.options-username:hover {
+  cursor: pointer;
+}
+
+/* SIGN UP FORM CSS */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup-button {
+  width: fit-content;
+  margin: auto;
+}
+.signup-button:hover {
+  cursor: pointer;
+  color: crimson;
+}
+
+.signup-form-container {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form-header {
+  padding: 0 0 5px 35px;
+
+  text-align: left;
+}
+.signup-form-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input-field {
+  padding-bottom: 10px;
+}
+
+/* CREATE POST CSS */
+
+.create-post-container {
+  border: 0px solid rgb(30, 30, 30);
+  background-color: rgb(53, 78, 100);
+  color: white;
+}
+.create-post-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.create-post-input-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post-footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  max-width: 300px;
+}
+
+/* HOMEPAGE CSS */
+
+.main-homepage-wrapper {
+  margin: auto;
+  max-width: 600px;
+}
+
+/* TWEET CSS*/
+.all-tweets {
+}
+.tweet-container {
+  background-color: rgb(53, 78, 100);
+  color: white;
+}
+.tweet-container-wrapper {
+  display: flex;
+  margin: 2px 2px 0 10px;
+  width: 100%;
+}
+
+.tweet-container-header {
+  display: flex;
+  max-width: 500px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet-container-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-handle,
+.tweet-username,
+.tweet-date,
+.tweet-content {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.tweet-content {
+  font-size: 18px;
+  max-width: 520px;
+
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+
+  word-wrap: break-word;
+}
+
+.general-text {
+  color: white !important;
+}
+
+.tweet-container-footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 520px;
+}
+.delete-icon {
+  color: white;
+  margin-top: 10px;
+}
+.tweet-action-icon:hover {
+  cursor: pointer;
+  color: crimson;
+}
+.liked-field {
+  display: flex;
+  align-items: center;
+}
+.liked {
+  color: crimson;
+}
+/* PROFILE CSS */
+.profile-container {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.user-following-info-container {
+  max-width: 600px;
+  display: flex;
+}
+
+.user-following-info-username-handle {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.avatar-modal {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-modal-img {
+  max-height: 500px;
+}
+.link-string {
+  text-decoration: none;
+  color: inherit;
+}
+
+.avatar-link {
+  height: fit-content;
+}
+
+/* OPTIONS CSS */
+.options {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+.options-container {
+  max-width: 600px;
+  margin: auto;
+}
+.change-password-option,
+.change-handle-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+/* REPLY PAGE */
+.reply-page-container {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .create-post-container {
+  }
+  .tweet-container-body {
+    color: white;
+  }
+
+  .tweet-container {
+    margin: auto;
+
+    padding-right: 1px;
+  }
+  .tweet-container-wrapper {
+    margin-left: 0;
+  }
+  .avatar {
+    margin-left: 3px;
+  }
+  .delete-icon-mobile {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .mobile-friendly {
+    text-align: center;
+  }
+  .tweet-container-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .tweet-container-footer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .avatar-modal-img {
+    max-width: 300px;
+  }
+}
